@@ -8,7 +8,18 @@ namespace nietboekmaarmobiel
 {
     internal class Boek
     {
-        public string type;
+        public string Type
+            { get; set; }
+        public string Model
+            { get; set; }
+        public string OS
+            { get; set; }
+        public string CEO
+            { get; set; }
+        public int AantalEuros
+            { get; set; }
+
+        /*public string type;
         public string model;
         public string OS;
         public string CEO;
@@ -21,6 +32,6 @@ namespace nietboekmaarmobiel
             OS = nOS;
             CEO = nCEO;
             aantalEuros = aantal;
-        }
+        }*/
     }
 }

@@ -4,7 +4,7 @@ namespace Boodschappen_programma
 {
     class Boodschappen
     {
-        const string product = "Computerspel";
+        const string Product = "Computerspel";
         const float Computerspel = 24.95f;
         const float BtwPercentage = 0.21f;
         static void Main(string[] args)
@@ -12,7 +12,7 @@ namespace Boodschappen_programma
             int aantal;
             float Aantalbtw;
 
-            Console.WriteLine("Een " + product + " kost " + Computerspel + " ex btw.");
+            Console.WriteLine("Een " + Product + " kost " + Computerspel + " ex btw.");
             Console.WriteLine("Voer een aantal in: ");
 
             aantal = Convert.ToInt32(Console.ReadLine());
@@ -26,11 +26,11 @@ namespace Boodschappen_programma
                 float totaalPrijs = aantal * Computerspel + Aantalbtw;
                 if (aantal > 1)
                 {
-                    Console.WriteLine(aantal + " " + product + "en kost in totaal " + totaalPrijs);
+                    Console.WriteLine(aantal + " " + Product + "en kost in totaal " + totaalPrijs);
                 }
                 else
                 {
-                    Console.WriteLine(aantal + " " + product + " kost in totaal " + totaalPrijs);
+                    Console.WriteLine(aantal + " " + Product + " kost in totaal " + totaalPrijs);
                 }
 
             }
